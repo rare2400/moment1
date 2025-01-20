@@ -1,11 +1,20 @@
 {
-  "name": "firstmoment",
+  "name": "moment1",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rare2400/moment1.git"
   },
-  "author": "",
+  "author": "Ramona",
   "license": "ISC",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "bugs": {
+    "url": "https://github.com/rare2400/moment1/issues"
+  },
+  "homepage": "https://github.com/rare2400/moment1#readme",
   "description": ""
 }

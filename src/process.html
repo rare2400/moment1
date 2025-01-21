@@ -33,16 +33,62 @@
                     </span>
                     <span class="menu-text">Stäng</span>
                 </button>
-                    <ul>
-                        <li><a href="index.html">Startsida</a></li>
-                        <li><a href="images.html">Bilder</a></li>
-                        <li><a href="process.html">Arbetsprocess</a></li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="images.html">Bilder</a></li>
+                    <li><a href="process.html">Arbetsprocess</a></li>
+                </ul>
+            </nav>
         </header>
         <main class="content">
             <section>
                 <h2>Arbetsprocess</h2>
+                <div class="process-box">
+                    <p>Arbetsprocessen börja med att jag gjorde mitt arbete i terminalen för att hämta parcel-paketet.
+                        NPM-paketet parcel automatiserar processen att transpilera och minifiera CSS-, HTML- och
+                        JavaScript-filerna samt optimera bildfilerna. Jag lade till en .gitignore-fil för parcelpaketet
+                        och package-lock.json-filen, så dem filerna inte skulle sparas till mitt github repo. När jag
+                        hade gjort detta lade jag till mitt arbete i git, i ett repository på github. Jag hade hunnit
+                        ladda upp indexfilen i main-brancshen men det var ännu inget innehåll i den så då skapade jag en
+                        branch, att arbeta i under utvecklingsfasen av webbplatsen. När jag hade gjort klart allt med
+                        git och npm parcel påbörjade jag utvecklingen av webbplatsen i HTML och CSS. För att se
+                        uppdateringar live användes npm start i terminalen där en länk för live-uppdateringen av arbetet
+                        och automatiseringen kommer upp. </p>
+                    <p>Först och främst skapade jag en grund för alla sidor där meta-, script- och link- taggar lades in
+                        i head-taggen för funktioner samt länka CSS- och JavaScript-filen till HTML-koden. Även andra
+                        HTML-taggar lades in för att strukturera upp dokumenten, med hjälp av header, main, div, section
+                        och footer byggdes koden upp. När detta lagts in i alla HTML-dokumenten påbörjades arbetet med
+                        startsidan där information om uppgiften beskrivs. När texten lagts in och stylats i CSS började
+                        arbetet med navigeringsmenyn. Först skrivs HTML-koden för navigeringsmenyn som ska vara under en
+                        hamburger-ikon på mindre skärmstorlekar och utskriven på större skärmar. Därmed läggs knappar
+                        till som är till för att öppna och stänga navigeringsmenyn. När detta är klart börjar funktionen
+                        för knapparna kodas i js-filen, knapparnas id-attribut används för att skapa en eventlistener
+                        som lyssnar efter klick på knapparna. När knapparna klickas på ska en stil för att visa och
+                        dölja en meny läggas till. Därefter börjar designen i CSS för hur knapparna och navigeringsmenyn
+                        ska se ut för mobilversionen. Knapparna ligger till höger i headerna och när "meny"-knappen
+                        klickas på kommer menyn fram med till höger på sidan och sträcker sig hel vägen ner. När
+                        "stäng"-knappen klickas på försvinner navigeringsmenyn och menyknappen kommer fram igen. På
+                        stora skärmar visas navigeringsmenyn hela tiden i headern i linje horizontellt och knapparna för
+                        att öppna och stänga menyn är dolda.
+                    </p>
+                    <p>Sedan börjar arbetet med sidan som de fem fotografierna ska var på, jag tar fram 5 bilder som är
+                        i ungefär samma storlek och lägger in jpeg-filerna i varsin picture-tagg. den första källan i
+                        picture-taggen är jpeg-bilden med villkoren att den ska konverteras till filformatet avif och
+                        bredden 400px. Sedan läggs jpeg bilden in i en img-tagg som fallback med samma storlek. När
+                        fotona lagts in stylar jag de först i det mindre läget där de ska ligga i rad efter varandra.
+                        Sedan ska bilderna ligga i två kolumner på större skärmar, så behållaren med picture-taggarna
+                        får en grid för att placera ut bilderna. Den femte bilden placera längst ner i mitten med hjälp
+                        av grid-area, samt att den får ett id-attribut för att kunna stylas annorlunda mot de andra
+                        img-taggarna. </p>
+                    <p>Nu ser sidorna på webbplatsen ut som önskat och den sista texten till sidan för arbetsprocessen
+                        läggs in med samma attribut-namn som index-sidan för att få samma utseende. Varje steg i
+                        processen har versionshanterats genom git i github, så när exemeplvis index-filen inneeåll var
+                        klart lades ändrignarna in i staging area och skickades vidare med ett meddelande för vad som
+                        gjorts. Detta utfödes sedan vid varje steg, som arbetet med navigeringsmenyn, stylingen i css,
+                        funktionen i js och så vidare. När arbetet är klart slås utvecklings-branchen ihop med main för
+                        att sedan använda npm run build för att ladda upp det färdiga arbetet, som då finns publicerat
+                        hos github.</p>
+                </div>
             </section>
         </main>
         <footer>

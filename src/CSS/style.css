@@ -25,6 +25,7 @@ h1 a {
 
 h2 {
     text-align: center;
+    font-size: 1.8rem;
 }
 
 /* navigeringsmeny */
@@ -125,10 +126,20 @@ nav li:hover {
     padding: 1rem 2rem 2rem;
 }
 
+.images {
+    text-align: center;
+}
 
+img {
+    margin: 1rem auto;
+}
 
 /* större skärmar */
 @media only screen and (min-width: 45rem) {
+    /* general settings */
+    h2 {
+        font-size: 2.5rem;
+    }
 
     /* nav-menu */
     .menu-btn {
@@ -169,5 +180,27 @@ nav li:hover {
         margin: 2% auto 40vh;
         max-width: 40rem;
         padding: 0 2rem;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.8rem;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    img {
+        margin: 0;
+        width: 100%;
+    }
+
+    #fifth-image {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    #centered-image {
+        grid-area: 3/1/4/3;
     }
 }

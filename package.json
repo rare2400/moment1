@@ -16,5 +16,8 @@
     "url": "https://github.com/rare2400/moment1/issues"
   },
   "homepage": "https://github.com/rare2400/moment1#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
 }

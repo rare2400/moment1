@@ -1,6 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
+    background-color: beige;
 }
 
 header {
@@ -16,6 +17,8 @@ footer {
     color: white;
     padding: 1rem;
     margin: 0;
+    position: relative;
+    bottom: 0;
 }
 
 h1 a {
@@ -24,6 +27,7 @@ h1 a {
 }
 
 h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 1.8rem;
 }
@@ -119,26 +123,32 @@ nav li:hover {
     color: black;
 }
 
-/* index-page */
-.text-box {
+/* index- & assignment-page */
+.text-box, .process-box{
+    line-height: 1.2rem;
     border: 2px solid rgb(85, 19, 19);
-    margin: 2% 1rem 30vh;
-    padding: 1rem 2rem 2rem;
+    background-color: white;
+    padding: 1rem 1.5rem 2rem;
+    margin: 0 1rem 1rem;
 }
 
+/* image-page */
 .images {
     text-align: center;
 }
 
 img {
     margin: 1rem auto;
+    box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.64);
 }
 
 /* större skärmar */
 @media only screen and (min-width: 45rem) {
+
     /* general settings */
     h2 {
         font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
 
     /* nav-menu */
@@ -175,13 +185,20 @@ img {
         color: #fff;
     }
 
-    /* index-page */
-    .text-box {
-        margin: 2% auto 40vh;
+    /* index- & assignment-page */
+    .text-box,
+    .process-box {
+        margin: 0 auto 2rem;
         max-width: 40rem;
         padding: 0 2rem;
+        box-shadow: -10px 12px 10px 0px rgba(0, 0, 0, 0.64);
     }
 
+    .text-box {
+        margin-bottom: 50vh;
+    }
+
+    /* image-page */
     .images {
         display: grid;
         grid-template-columns: 1fr 1fr;

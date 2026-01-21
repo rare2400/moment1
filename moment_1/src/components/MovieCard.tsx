@@ -1,3 +1,6 @@
+// Importerar CSS-fil för MovieCard-komponenten
+import "./MovieCard.css"
+
 // Interface för MovieCard-komponenten
 interface MovieCardProps {
     name: string,

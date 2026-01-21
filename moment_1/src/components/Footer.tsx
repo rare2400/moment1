@@ -5,9 +5,9 @@ import "./Footer.css"
 function Footer() {
     return (
         <footer>
-            <p>Laborationsuppgift för kursen DT207G, <br />
-                Backend-baserad webbutveckling <br />
-                Copyright &copy; Ramona Reinholdz</p>
+            <p>Laborationsuppgift för kursen DT210G, <br />
+                Fördjupad frontend-utveckling <br />
+                Ramona Reinholdz &copy; 2026</p>
         </footer>
     )
 }

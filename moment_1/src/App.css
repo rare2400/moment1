@@ -1,0 +1,14 @@
+.container {
+    width: 70%;
+    margin: 0 auto 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        width: 90%;
+        max-width: 1200px;
+    }    
+}

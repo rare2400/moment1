@@ -4,7 +4,7 @@ Innehåll och logik är strukturerat med komponenter, samt att webbplatsen är a
 responsiv design.
 
 ## Länk till publicerad webbplats
-
+[https://moment1dt210g.netlify.app/](https://moment1dt210g.netlify.app/)
 
 ## Skapad av
 Ramona Reinholdz      
